@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+
+<html lnag="en">
+<head>
+    <title>Jesse Wood</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Indie+Flower|Poiret+One|Shadows+Into+Light|Quicksand' rel='stylesheet' type='text/css'>
+    <link href="~/Content/Styles.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div class="navbar" id="navnav">
+        <div class="container-fluid">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="navbar-collapse collapse">
+                <ul id="navUL">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row" id="rowOne">
+            <div class="col-md-12">
+                <h1 id="headOne">Hi! Welcome to my site.</h1>
+                <h2 id="headTwo">My name is Jesse Wood</h2>
+                <h1 id="headThree">Care to go on a little adventure?</h1>
+            </div>
+        </div>
+
+        <div class="row text-center" id="rowTwo">
+
+            <div class="col-md-4">
+                <div id="dostalgia2" class="dostalgia2">
+                    <a href="~/Home/Contact" class="athing">
+                        <img src="~/Images/captaincomic.jpg" height="100" width="100" id="captain"/>
+                        <h1>DOStalgia</h1>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div id="hiding" class="dostalgia2">
+                    <a href="~/Home/Contact" class="athing">
+                        <h1>Hiding in the dark</h1>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div id="color" class="dostalgia2">
+                    <a href="~/Home/Contact" class="athing">
+                        <h1>Random color</h1>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+</html>

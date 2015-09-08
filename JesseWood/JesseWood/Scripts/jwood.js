@@ -1,4 +1,4 @@
-﻿var didScroll = false;
+﻿/*var didScroll = false;
 var scrollHeadCreated = false;
 
 $(window).scroll(function () {
@@ -22,4 +22,17 @@ function hasScrolled() {
         $("#bunko").remove();
         scrollHeadCreated = false;
     }
-}
+}*/
+
+$(document).ready(function () {
+    $('#my-email').html(function () {
+        var e = "jessewood";
+        var n = "21";
+        var a = "@";
+        var g = "gmail";
+        var d = ".com";
+        var f = 'mailto:' + e + n + a + g + d;
+        $(this).parent('a').attr('href', f);
+        return e + n + a + g + d;
+    });
+});

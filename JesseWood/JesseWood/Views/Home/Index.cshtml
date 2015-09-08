@@ -24,9 +24,10 @@
                 <ul id="navUL">
                     @*<li>@Html.ActionLink("Home", "Index", "Home", new { @class = "navLink" })</li>*@
                     @*<li>@Html.ActionLink("About", "About", "Home", new { @class = "navLink" })</li>*@
+                    @*<li>@Html.ActionLink("Contact", "Contact", "Home", new { @class = "navLink" })</li>*@
                     <li><a class="navLink" href="#rowOne">Home</a></li>
-                    <li><a class="navLink" href="#rowFour">About</a></li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home", new { @class = "navLink" })</li>
+                    <li><a class="navLink" href="#rowTwo">About</a></li>
+                    <li><a class="navLink" href="#rowFour">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -44,61 +45,62 @@
         <div class="row text-center" id="rowTwo">
             <div class="col-md-4">
                 <div id="dostalgia2" class="buttonContainer">
-                    <a href="~/Home/Contact" class="largeButton">
-                        <img src="~/Images/captaincomic.jpg" height="100" width="100" id="captain" />
-                        <h1>DOStalgia</h1>
+                    <a href="#" class="largeButton">
+                        <h1 class="boxText">Simplicity</h1>
                     </a>
                 </div>
             </div>
 
             <div class="col-md-4">
                 <div id="hiding" class="buttonContainer">
-                    <a href="~/Home/Contact" class="largeButton">
-                        <h1>Hiding in the dark</h1>
+                    <a href="#" class="largeButton">
+                        <h1 class="boxText">Usability</h1>
                     </a>
                 </div>
             </div>
 
             <div class="col-md-4">
                 <div id="color" class="buttonContainer">
-                    <a href="~/Home/Contact" class="largeButton">
-                        <h1>Random color</h1>
+                    <a href="#" class="largeButton">
+                        <h1 class="boxText">Design</h1>
                     </a>
                 </div>
             </div>
         </div>
 
-        <div class="row text-center" id="rowThree">
-            <div class="col-md-4">
-                <div id="" class="buttonContainer">
-                    <a href="~/Home/Contact" class="largeButton">
-                        <h1>Simplicity</h1>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div id="" class="buttonContainer">
-                    <a href="~/Home/Contact" class="largeButton">
-                        <h1>Usability</h1>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div id="" class="buttonContainer">
-                    <a href="~/Home/Contact" class="largeButton">
-                        <h1>Design</h1>
-                    </a>
-                </div>
+        @*<div class="row text-center" id="rowThree">
+        <div class="col-md-4">
+            <div id="" class="buttonContainer">
+                <a href="~/Home/Contact" class="largeButton">
+                    <h1>Simplicity</h1>
+                </a>
             </div>
         </div>
+        <div class="col-md-4">
+            <div id="" class="buttonContainer">
+                <a href="~/Home/Contact" class="largeButton">
+                    <h1>Usability</h1>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div id="" class="buttonContainer">
+                <a href="~/Home/Contact" class="largeButton">
+                    <h1>Design</h1>
+                </a>
+            </div>
+        </div>
+    </div>*@
 
         <div class="row text-center" id="rowFour">
-            <h1>About</h1>
+            <h5>&copy; 2015, Jesse Wood</h5>
+            <h5>JW Design</h5>
+            <a href="#"><span id="my-email">please enable javascript to view</span></a>
         </div>
 
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    @*<script src="~/Scripts/jwood.js"></script>*@
+    <script src="~/Scripts/jwood.js"></script>
 </body>
 </html>

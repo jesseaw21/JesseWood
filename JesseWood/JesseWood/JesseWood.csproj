@@ -180,9 +180,11 @@
     <Content Include="Content\Site.css" />
     <Content Include="Images\captaincomic.jpg" />
     <Content Include="Images\gray_plumeria_flower.jpg" />
+    <Content Include="Images\gray_plumeria_flower2.jpg" />
     <Content Include="Images\oceanbirds.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <None Include="Properties\PublishProfiles\jessewood %282%29.pubxml" />
     <None Include="Properties\PublishProfiles\jessewood.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />

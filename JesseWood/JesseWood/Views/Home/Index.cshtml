@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE html>
 
-<html lnag="en">
+<html lang="en">
 <head>
     <title>Jesse Wood</title>
     <meta charset="utf-8">
@@ -12,14 +12,19 @@
 </head>
 <body>
 
+    <!--Navbar-->
     <div class="navbar" id="navnav">
         <div class="container-fluid">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
+                <span class="icon-bar" id="hamburger"></span>
+                <span class="icon-bar" id="hamburger"></span>
+                <span class="icon-bar" id="hamburger"></span>
             </button>
+
+            <!--Brand-->
             <a id="brand" class="navbar-brand" href="#">JW</a>
+
+            <!--Everything hidden at 940px or less-->
             <div class="navbar-collapse collapse">
                 <ul id="navUL">
                     @*<li>@Html.ActionLink("Home", "Index", "Home", new { @class = "navLink" })</li>*@
@@ -44,7 +49,7 @@
 
         <div class="row text-center" id="rowTwo">
             <div class="col-md-4">
-                <div id="dostalgia2" class="buttonContainer">
+                <div class="buttonContainer">
                     <a href="#" class="largeButton">
                         <h1 class="boxText">Simplicity</h1>
                     </a>
@@ -52,7 +57,7 @@
             </div>
 
             <div class="col-md-4">
-                <div id="hiding" class="buttonContainer">
+                <div class="buttonContainer">
                     <a href="#" class="largeButton">
                         <h1 class="boxText">Usability</h1>
                     </a>
@@ -60,7 +65,7 @@
             </div>
 
             <div class="col-md-4">
-                <div id="color" class="buttonContainer">
+                <div class="buttonContainer">
                     <a href="#" class="largeButton">
                         <h1 class="boxText">Design</h1>
                     </a>
@@ -92,10 +97,10 @@
         </div>
     </div>*@
 
-        <div class="row text-center" id="rowFour">
+        <div class="row text-center" id="footer">
             <h5>&copy; 2015, Jesse Wood</h5>
             <h5>JW Design</h5>
-            <a href="#"><span id="my-email">please enable javascript to view</span></a>
+            <a href="#"><span id="my-email">Please enable javascript to view</span></a>
         </div>
 
     </div>

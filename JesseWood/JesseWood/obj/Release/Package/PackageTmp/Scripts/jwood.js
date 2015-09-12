@@ -24,15 +24,15 @@ function hasScrolled() {
     }
 }*/
 
-$(document).ready(function() {
-    var email = $("#email");
-    email.html(returnFirst() + returnSecond());
+$(document).ready(function () {
+    $('#my-email').html(function () {
+        var e = "jessewood";
+        var n = "21";
+        var a = "@";
+        var g = "gmail";
+        var d = ".com";
+        var f = 'mailto:' + e + n + a + g + d;
+        $(this).parent('a').attr('href', f);
+        return e + n + a + g + d;
+    });
 });
-
-function returnFirst() {
-    return "jessewood21";
-}
-
-function returnSecond() {
-    return "@email.com";
-}

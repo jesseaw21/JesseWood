@@ -1,17 +1,10 @@
 ﻿html, body {
-    background-color: white;
+    background-color: #F4F4F4;
     width: 100%;
 }
 
-#bunko {
-    position: fixed;
-    background-color: green;
-    width: 100%;
-    height: 50px;
-    top: 0px;
-}
-
-span {
+/* Navbar Styles */
+#hamburger {
     background-color: black;
 }
 
@@ -28,12 +21,7 @@ span {
 }
 
 #brand:hover {
-    border: 1px solid black;
-}
-
-#navUL {
-    float: right;
-    margin: .75% 10% 0 0;
+    border: 1px solid #440402;
 }
 
 #navnav {
@@ -42,11 +30,14 @@ span {
     margin-bottom: 0px;
 }
 
+#navUL {
+    margin: .75% 10% 0 0;
+}
+
 li {
     font-family: 'Poiret One';
     font-size: 2.5em;
     transition: background-color .25s;
-    float: left;
     list-style: none;
     margin-left: 15px;
     border-left: 1px solid lightgrey;
@@ -54,7 +45,7 @@ li {
 }
 
 li:hover {
-    background-color: #202121;
+    background-color: #440402;
     border-radius: 10px 30px;
 }
 
@@ -73,6 +64,8 @@ li:hover {
     text-decoration: none;
 }
 
+/* End navbar syles */
+
 a:link, a:visited, a:hover, a {
     text-decoration: none;
 }
@@ -82,7 +75,8 @@ a:link, a:visited, a:hover, a {
     background-size: 100% 100%;
     padding-bottom: 19%;
     padding-top: 19%;
-    /*height: 600px;
+    /* Parallax scrolling experimentation
+        height: 600px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -109,19 +103,7 @@ a:link, a:visited, a:hover, a {
 #rowTwo {
     padding-bottom: 2%;
     padding-top: 2%;
-    background-color: white;
-}
-
-.boxText {
-    font-family: 'Poiret One';
-    color: black;
-    margin-top: 25%;
-}
-
-#rowThree {
-    padding-bottom: 2%;
-    padding-top: 2%;
-    background-color: rgb(255, 161, 38);
+    background-color: #440402;
 }
 
 .buttonContainer {
@@ -146,12 +128,17 @@ a:link, a:visited, a:hover, a {
 .largeButton:hover {
     background-color: #fafafa;
 }
-
-#captain {
-    margin-top: 70px;
+.largeButton:hover h1 {
+    color: black;
 }
 
-#rowFour {
+.boxText {
+    font-family: 'Poiret One';
+    color: white;
+    margin-top: 125px;
+}
+
+#footer {
     background-color: #202121;
     padding-bottom: 6%;
     padding-top: 6%;
@@ -164,4 +151,27 @@ h5 {
 #my-email {
     color: white;
     background-color: #202121;
+}
+
+@media (min-width: 768px) {
+    li {
+        float: left;        
+    }
+    #navUL {
+        float: right;
+    }
+}
+
+@media (max-width: 760px) {
+    li {
+        border: none;
+        margin-left: -10px;
+        font-size: 1.2em;
+    }
+    #navUL {
+        padding-left: 0px;
+    }
+    #rowOne {
+        background: none;
+    }
 }

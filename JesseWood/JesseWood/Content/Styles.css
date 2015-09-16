@@ -1,5 +1,5 @@
 ﻿html, body {
-    background-color: white;
+    background-color: #F4F4F4;
     width: 100%;
 }
 
@@ -64,25 +64,6 @@ li:hover {
     text-decoration: none;
 }
 
-@media (min-width: 768px) {
-    li {
-        float: left;        
-    }
-    #navUL {
-        float: right;
-    }
-}
-
-@media (max-width: 760px) {
-    li {
-        border: none;
-        margin-left: 0px;
-    }
-    .navLink {
-        font-size: .75em;
-    }
-}
-
 /* End navbar syles */
 
 a:link, a:visited, a:hover, a {
@@ -125,18 +106,6 @@ a:link, a:visited, a:hover, a {
     background-color: #440402;
 }
 
-.boxText {
-    font-family: 'Poiret One';
-    color: white;
-    margin-top: 25%;
-}
-
-#rowThree {
-    padding-bottom: 2%;
-    padding-top: 2%;
-    background-color: rgb(255, 161, 38);
-}
-
 .buttonContainer {
     display: inline-block;
     width: 70%;
@@ -163,8 +132,10 @@ a:link, a:visited, a:hover, a {
     color: black;
 }
 
-#captain {
-    margin-top: 70px;
+.boxText {
+    font-family: 'Poiret One';
+    color: white;
+    margin-top: 125px;
 }
 
 #footer {
@@ -180,4 +151,27 @@ h5 {
 #my-email {
     color: white;
     background-color: #202121;
+}
+
+@media (min-width: 768px) {
+    li {
+        float: left;        
+    }
+    #navUL {
+        float: right;
+    }
+}
+
+@media (max-width: 760px) {
+    li {
+        border: none;
+        margin-left: -10px;
+        font-size: 1.2em;
+    }
+    #navUL {
+        padding-left: 0px;
+    }
+    #rowOne {
+        background: none;
+    }
 }
